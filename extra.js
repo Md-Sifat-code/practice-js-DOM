@@ -49,3 +49,18 @@ document.getElementById('Buy1').addEventListener('click',function(){
     input_filed_4.value ='';
 
 })
+// To add the blog
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    const Blog = document.getElementById('add_blog');
+    const new_Blog = Blog.value;
+
+    const Blog_adder = document.getElementById('blog-area');
+    const x = document.createElement('p');
+    x.innerText = new_Blog;
+    Blog_adder.appendChild(x);
+    x.style.textAlign = 'start';
+    x.style.width = 'auto';
+
+    Blog.value ='';
+})
